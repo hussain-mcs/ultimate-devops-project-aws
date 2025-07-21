@@ -1,5 +1,5 @@
 resource "aws_iam_role" "cluster" {
-  name = "${var.cluster_name}-cluster-role"
+  name = "${var.cluster_name}-cluster-role-7767-otel"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -33,7 +33,7 @@ resource "aws_eks_cluster" "main" {
 }
 
 resource "aws_iam_role" "node" {
-  name = "${var.cluster_name}-node-role"
+  name = "${var.cluster_name}-node-role-7767-otel"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
