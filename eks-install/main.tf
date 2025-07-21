@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "demo-terraform-eks-state-s3-bucket"
+    bucket         = "demo-terraform-eks-state-s3-bucket-7767-otel-21"
     key            = "terraform.tfstate"
-    region         = "us-west-2"
-    dynamodb_table = "terraform-eks-state-locks"
+    region         = "ap-south-1"
+    dynamodb_table = "terraform-eks-state-locks-7767-otel-21"
     encrypt        = true
   }
 }
